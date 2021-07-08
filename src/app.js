@@ -78,6 +78,20 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+current = document.getElementById("#current");
+let apiKey = "a2e6113ea75155225ff8f0f04ddc7b8f";
+current.addEventListener("click", (e) => {
+  e.preventDefault();
+  navigator.geolocation.getCurrentPosition((position) => {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    axios.get(url).then((response) => {
+      search(response.data.name);
+    });
+  });
+});
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");

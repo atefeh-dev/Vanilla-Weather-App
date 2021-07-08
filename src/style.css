@@ -78,3 +78,26 @@ li:first-letter {
   text-align: center;
   margin-top: 12px;
 }
+.material-icons-outlined {
+  color: #17a2b8;
+}
+
+.ml {
+  position: absolute;
+  color: rgb(135, 135, 135);
+  margin-top: -1px;
+}
+.loc {
+  margin-top: -12px;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.material-icons-outlined {
+  font-size: 14px;
+}
+.ml:hover,
+.ml:hover span {
+  cursor: pointer;
+  color: #596263;
+}
