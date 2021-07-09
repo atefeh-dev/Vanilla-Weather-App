@@ -2,7 +2,7 @@
 
 body {
   font-family: arial, sans-serif;
-  background-color: rgb(239, 247, 246);
+  background-color: rgb(244, 247, 246);
 }
 
 h1 {
@@ -43,6 +43,7 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 5px;
   background-color: white;
+  margin-top: 160px;
 }
 
 .overview {
